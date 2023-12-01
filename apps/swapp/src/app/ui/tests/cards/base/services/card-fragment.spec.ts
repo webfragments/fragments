@@ -7,7 +7,7 @@ import {
   fragment,
   fragments,
   methods,
-} from '@fragments/ng-fragments';
+} from '@web-fragments/ng-fragments';
 import { cards, resourceItems } from './data';
 import {
   CardComponentContext,

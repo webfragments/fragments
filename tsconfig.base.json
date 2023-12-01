@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fragments/ng-fragments": ["libs/ng-fragments/src/index.ts"]
+      "@web-fragments/ng-fragments": ["libs/ng-fragments/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

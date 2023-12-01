@@ -5,7 +5,7 @@ import {
   contextBuilder,
   fragments,
   methods,
-} from '@fragments/ng-fragments';
+} from '@web-fragments/ng-fragments';
 import { TwoPlayersCardsLayoutComponent } from '../../../base/components/two-players-cards-layout/two-players-cards-layout.component';
 import { store$ } from '../../../base/fragments/card-store.fragment';
 import {

@@ -6,7 +6,7 @@ import {
   fragments,
   hooks,
   methods,
-} from '@fragments/ng-fragments';
+} from '@web-fragments/ng-fragments';
 import { TwoPlayersCardsLayoutComponent } from '../../../base/components/two-players-cards-layout/two-players-cards-layout.component';
 import { comparePeople } from '../../services/people-comparer';
 import { mapPeople } from '../../services/people-mapper';

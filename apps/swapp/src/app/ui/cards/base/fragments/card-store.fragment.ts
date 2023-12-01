@@ -6,7 +6,7 @@ import {
   storeBuilder,
   storeFragment,
   updaters,
-} from '@fragments/ng-fragments';
+} from '@web-fragments/ng-fragments';
 import { CardPlayer } from '../models/card-player';
 import { Card } from '../models/card';
 

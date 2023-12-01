@@ -7,7 +7,7 @@ import {
   contextBuilder,
   fragments,
   methods,
-} from '@fragments/ng-fragments';
+} from '@web-fragments/ng-fragments';
 import { baseGet, baseGetAll } from '../../../base/fragments/base-api';
 
 const FakeContext = build(

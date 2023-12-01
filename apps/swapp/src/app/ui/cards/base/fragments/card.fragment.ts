@@ -7,7 +7,7 @@ import {
   Fragment,
   FragmentResultType,
   FragmentType,
-} from '@fragments/ng-fragments';
+} from '@web-fragments/ng-fragments';
 import { getRandom } from '../../../../common';
 import { store$ } from './card-store.fragment';
 import { Card } from '../models/card';

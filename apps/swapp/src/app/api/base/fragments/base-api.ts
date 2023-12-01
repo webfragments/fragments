@@ -1,5 +1,5 @@
 import { Observable, map } from 'rxjs';
-import { ApiResult, apiFragment } from '@fragments/ng-fragments';
+import { ApiResult, apiFragment } from '@web-fragments/ng-fragments';
 import { mapResponseToCamelCase } from '../utils/response.util';
 import { CollectionApiResult } from '../models/collection-api-result';
 import { CollectionResult } from '../models/collection-result';
