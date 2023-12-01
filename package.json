@@ -1,9 +1,19 @@
 {
   "name": "@fragments/source",
   "version": "0.0.0",
-  "license": "MIT",
+  "description": "repo for web-fragments",
   "scripts": {},
-  "private": true,
+  "keywords": [
+    "web-fragments",
+    "ng-fragments",
+    "angular"
+  ],
+  "license": "MIT",
+  "author": "Wojciech Krzysztofowicz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webfragments/fragments.git/"
+  },
   "dependencies": {
     "@angular/animations": "~17.0.0",
     "@angular/cdk": "^17.0.1",
