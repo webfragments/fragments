@@ -1,0 +1,6 @@
+<sw-cards-layout [title]="title" [isLoading]="isLoading?.()" (draw)="draw()">
+    <div class="card-container">
+        <sw-card-player [name]="'PLAYERS.PLAYER_1' | translate" [player]="player1?.()"></sw-card-player>
+        <sw-card-player [name]="'PLAYERS.COMPUTER' | translate" [player]="player2?.()"></sw-card-player>
+    </div>
+</sw-cards-layout>

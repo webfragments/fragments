@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  padding: 3rem;
+
+  .title {
+    margin-bottom: 3rem;
+  }
+
+  .game-group {
+    .game-list {
+      list-style: none;
+      padding-left: 0;
+
+      &-item {
+        &:not(:last-of-type) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div *ngIf="player" data-test="player" [ngClass]="{'win': player.win}">
+    <h3 data-test="player-name" class="player-name">
+        {{ name }}
+        <span class="win-label" *ngIf="player.win">{{ 'GENERAL.WIN' | translate | uppercase }}</span>
+    </h3>
+
+    <h4 data-test="score" class="player-score">{{ 'GENERAL.SCORE' | translate }}: {{ player.score }}</h4>
+
+    <div class="card-container">
+        <sw-card *ngIf="!player.isLoading; else loader" data-test="card" class="card" [card]="player.card"></sw-card>
+    </div>
+</div>
+
+<ng-template #loader>
+    <mat-spinner data-test="card-spinner"></mat-spinner>
+</ng-template>

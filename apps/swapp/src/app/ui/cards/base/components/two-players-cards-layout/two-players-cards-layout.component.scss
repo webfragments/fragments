@@ -1,0 +1,9 @@
+:host {
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,8 @@
+@use 'variables.scss' as var;
+
+:host {
+  .link {
+    color: var.$white !important;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,12 @@
+:host {
+  height: 100%;
+  padding: 3rem;
+  display: block;
+  box-sizing: border-box;
+
+  .action-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+}

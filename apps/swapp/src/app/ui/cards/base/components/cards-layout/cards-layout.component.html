@@ -1,0 +1,9 @@
+<h1 class="title">{{ title }}</h1>
+
+<div class="action-container">
+    <button data-test="play-button" mat-flat-button color="primary" [disabled]="isLoading" (click)="draw.emit()">
+        {{ 'GENERAL.PLAY' | translate }}
+    </button>
+</div>
+
+<ng-content></ng-content>

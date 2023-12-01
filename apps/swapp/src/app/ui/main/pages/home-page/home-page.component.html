@@ -1,0 +1,19 @@
+<h1 class="title">{{ 'HOME.WELCOME' | translate }}</h1>
+
+<!--TODO Refactor: move this list to ts file-->
+<div class="game-group">
+    <h3 class="game-group-title">{{ 'CARDS' | translate }}</h3>
+
+    <ul class="game-list">
+        <li class="game-list-item">
+            <a data-test="resource-link" routerLink="/cards/people" mat-flat-button>
+                {{ 'CARDS.PEOPLE' | translate }}
+            </a>
+        </li>
+        <li class="game-list-item">
+            <a data-test="resource-link" routerLink="/cards/starships" mat-flat-button>
+                {{ 'CARDS.STARSHIPS' | translate}}
+            </a>
+        </li>
+    </ul>
+</div>

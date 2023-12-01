@@ -1,0 +1,22 @@
+{
+  "APP.TITLE": "Star Wars",
+
+  "CARDS": "Cards",
+  "CARDS.PEOPLE": "People",
+  "CARDS.PEOPLE.EYE_COLOR": "Eye color",
+  "CARDS.PEOPLE.GENDER": "Gender",
+  "CARDS.PEOPLE.MASS": "Mass",
+  "CARDS.STARSHIPS": "Starships",
+  "CARDS.STARSHIPS.CREW": "Crew",
+  "CARDS.STARSHIPS.LENGTH": "Length",
+  "CARDS.STARSHIPS.STARSHIP_CLASS": "Starship class",
+
+  "GENERAL.PLAY": "Play",
+  "GENERAL.SCORE": "Score",
+  "GENERAL.WIN": "Win",
+
+  "HOME.WELCOME": "Welcome",
+
+  "PLAYERS.PLAYER_1": "Player 1",
+  "PLAYERS.COMPUTER": "Computer"
+}
