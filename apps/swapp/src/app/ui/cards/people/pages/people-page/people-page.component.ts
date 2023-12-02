@@ -1,4 +1,4 @@
-import { Component, Type } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   build,
@@ -26,29 +26,32 @@ const styles = `
   }
 `;
 
-export const PeopleComponentContext: Type<CardComponentContext> = build(
-  contextBuilder(),
-  fragments({
-    store$,
-    totalPages$,
-    getAll$: peopleGetAll,
-    get$: peopleGet,
-  }),
-  hooks(() => ({
-    onInit: () => {
-      console.log('people context initialized');
-    },
-    onDestroy: () => {
-      console.log('people context destroyed');
-    },
-  })),
-  methods(({ _exec, store$ }) => ({
-    draw: () => _exec(draw$),
-    getState: () => _exec(store$),
-    compare: comparePeople,
-    map: mapPeople,
-  }))
-);
+@Injectable()
+export class PeopleComponentContext
+  extends build(
+    contextBuilder(),
+    fragments({
+      store$,
+      totalPages$,
+      getAll$: peopleGetAll,
+      get$: peopleGet,
+    }),
+    hooks(() => ({
+      onInit: () => {
+        console.log('people context initialized');
+      },
+      onDestroy: () => {
+        console.log('people context destroyed');
+      },
+    })),
+    methods(({ _exec, store$ }) => ({
+      draw: () => _exec(draw$),
+      getState: () => _exec(store$),
+      compare: comparePeople,
+      map: mapPeople,
+    }))
+  )
+  implements CardComponentContext {}
 
 @Component({
   selector: 'sw-people-page',
