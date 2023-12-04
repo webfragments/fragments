@@ -2,7 +2,7 @@
   "name": "ng-fragments",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/ng-fragments/src",
-  "prefix": "fragments",
+  "prefix": "ft",
   "tags": [],
   "projectType": "library",
   "targets": {
