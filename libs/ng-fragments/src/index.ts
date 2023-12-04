@@ -5,17 +5,24 @@ export { hooks } from './builder-props/hooks';
 export { methods } from './builder-props/methods';
 export { props } from './builder-props/props';
 export { contextBuilder, ContextType } from './builders/context-builder';
+export { fragmentTemplateBuilder } from './builders/fragment-template-builder';
 export {
   signalState,
   storeBuilder,
   getters,
   updaters,
 } from './builders/store-builder';
+export { fragmentFactory } from './fragment/factory';
 export {
   Fragment,
   FragmentResultType,
   FragmentType,
   ExecutionContext,
+  FragmentFactory,
+  FragmentFn,
+  FragmentFunctionContext,
+  FragmentOptions,
+  FragmentTemplate,
 } from './fragment/types';
 export { apiFragment, ApiError, ApiResult } from './fragments/api-fragment';
 export { formFragment } from './fragments/form-fragment';
