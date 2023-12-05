@@ -102,7 +102,7 @@ describe('card fragments', () => {
         draw: () => _exec(draw$),
         compare: jest.fn(),
         map: jest.fn(),
-        getState: () => _exec(store$),
+        getStore: () => _exec(store$),
       }))
     );
 
@@ -122,7 +122,7 @@ describe('card fragments', () => {
         player2: { score: 0, isLoading: false, win: false },
       };
 
-      expect(fakeContext.getState().state()).toEqual(expectedResult);
+      expect(fakeContext.getStore().state()).toEqual(expectedResult);
     });
 
     it('set state when draw failure', async () => {
@@ -144,11 +144,11 @@ describe('card fragments', () => {
         );
 
       const drawResult = fakeContext.draw();
-      expect(fakeContext.getState().state()).toEqual(expectedResult.a);
+      expect(fakeContext.getStore().state()).toEqual(expectedResult.a);
 
       await drawResult;
 
-      expect(fakeContext.getState().state()).toEqual(expectedResult.b);
+      expect(fakeContext.getStore().state()).toEqual(expectedResult.b);
     });
 
     it('set state when draw success', async () => {
@@ -186,9 +186,9 @@ describe('card fragments', () => {
         .mockReturnValueOnce(cards[1]);
 
       const drawResult = fakeContext.draw();
-      expect(fakeContext.getState().state()).toEqual(expectedResult.a);
+      expect(fakeContext.getStore().state()).toEqual(expectedResult.a);
       await drawResult;
-      expect(fakeContext.getState().state()).toEqual(expectedResult.b);
+      expect(fakeContext.getStore().state()).toEqual(expectedResult.b);
 
       expect(getAllSpy.mock.calls.length).toBe(3);
       expect(getSpy.mock.calls.length).toBe(2);

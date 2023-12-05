@@ -46,7 +46,7 @@ export class PeopleComponentContext
     })),
     methods(({ _exec, store$ }) => ({
       draw: () => _exec(draw$),
-      getState: () => _exec(store$),
+      getStore: () => _exec(store$),
       compare: comparePeople,
       map: mapPeople,
     }))

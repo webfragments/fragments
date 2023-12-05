@@ -28,7 +28,7 @@ export const StarshipComponentContext: Type<CardComponentContext> = build(
   }),
   methods(({ _exec, store$ }) => ({
     draw: () => _exec(draw$),
-    getState: () => _exec(store$),
+    getStore: () => _exec(store$),
     compare: compareStarships,
     map: mapStarship,
   }))

@@ -19,7 +19,7 @@ export type CardComponentContext = {
   get$: Fragment<number, Promise<ApiResult<unknown>>>;
   totalPages$: Fragment<unknown, Promise<number>>;
   draw: () => void;
-  getState: () => FragmentResultType<typeof store$>;
+  getStore: () => FragmentResultType<typeof store$>;
   compare: ([card1, card2]: [Card, Card]) => number;
   map: (model: unknown) => Card;
 } & ExecutionContext;
@@ -56,8 +56,8 @@ const getCard$ = fragment(
 
 export const draw$ = fragment(
   async ({ _exec, store$, compare }: CardComponentContext) => {
-    const { draw, drawSuccess, drawFailure } = _exec(store$);
-    draw();
+    const store = _exec(store$);
+    store.draw();
 
     const [card1, card2] = await Promise.all([
       _exec(getCard$),
@@ -66,9 +66,9 @@ export const draw$ = fragment(
 
     if (card1 && card2) {
       const winner = compare([card1, card2]);
-      drawSuccess([card1, card2], winner);
+      store.drawSuccess([card1, card2], winner);
     } else {
-      drawFailure();
+      store.drawFailure();
     }
   }
 );
